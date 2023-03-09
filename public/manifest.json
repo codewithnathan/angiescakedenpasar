@@ -1,0 +1,15 @@
+{
+  "short_name": "Angie's Cake Denpasar",
+  "name": "Angie's Cake Denpasar",
+  "icons": [
+    {
+      "src": "/images/logos.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000",
+  "background_color": "#fff"
+}
