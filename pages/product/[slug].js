@@ -37,12 +37,12 @@ const ProductDetails = ({ product, products }) => {
           </div>
         </div>
         <div className='space-y-5'>
-          <h1 className='font-bold text-4xl'>{name}</h1>
           <Link href={`/category/${product?.kategori?.slug?.current}`}>
             <div className='bg-black w-fit text-white px-2 py-0.5 text-xs cursor-pointer'>
               {product.kategori.name}
             </div>
           </Link>
+          <h1 className='font-bold text-4xl'>{name}</h1>
           <h4 className='font-semibold'>Details: </h4>
           <p className='text-gray-600 md:w-96'>{details}</p>
           <p className='font-bold text-3xl md:text-4xl'>{rp.convert(price)}</p>

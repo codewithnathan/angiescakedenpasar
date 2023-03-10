@@ -46,7 +46,7 @@ const Home = ({ products, bannerData, categories }) => {
                 }
               </div>
               <input
-                className='border h-full px-4 py-3 w-3/4' placeholder='Search products...'
+                className='border h-full px-4 py-3 w-full sm:w-3/4' placeholder='Search products...'
                 onChange={e => setPhrase(e.target.value)}
               />
             </div>

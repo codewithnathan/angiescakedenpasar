@@ -60,7 +60,7 @@ const Cart = () => {
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
       className="bg-white fixed right-0 top-0 z-20" ref={cartRef}>
-      < div className="h-screen w-80 float-right bg-white px-5 py-8" >
+      < div className="h-screen w-80 flex flex-col float-right bg-white px-5 py-8" >
         <button
           type="button"
           className="flex items-center cursor-pointer gap-1 ml-3 border-0"
@@ -88,7 +88,7 @@ const Cart = () => {
           )
         }
 
-        <div className="flex flex-col gap-4 w-full mt-5 overflow-y-auto h-96 scrollbar-hide items-start">
+        <div className="flex flex-col gap-4 w-full mt-5 overflow-y-auto h-full scrollbar-hide items-start">
           {cartItems.length >= 1 && cartItems.map((item) => (
             <div className="flex w-full items-center gap-4 border-b pb-4" key={item._id}>
               <img src={urlFor(item?.image[0])} className="w-24 h-24 rounded-xl bg-gray-100" />
@@ -121,7 +121,7 @@ const Cart = () => {
         </div>
         {
           cartItems.length >= 1 && (
-            <div className='absolute bottom-5 w-full right-0 px-5'>
+            <div>
               <div className="flex justify-between text-lg my-4">
                 <h3>Subtotal:</h3>
                 <h3 className='font-semibold'>{rp.convert(totalPrice)}</h3>

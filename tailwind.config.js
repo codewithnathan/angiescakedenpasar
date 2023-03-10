@@ -14,7 +14,7 @@ module.exports = {
         'sans': ['Lexend', 'sans-serif']
       },
       fontSize: {
-        'xss': '9px'
+        'xss': '8px'
       },
       screens: {
         'xs': '480px'

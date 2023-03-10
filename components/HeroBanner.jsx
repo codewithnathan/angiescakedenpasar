@@ -26,12 +26,12 @@ const HeroBanner = ({ banner }) => {
               <motion.h1
                 className="text-gray-900 text-5xl font-bold sm:leading-tight lg:leading-tight lg:text-6xl">{banner.name}</motion.h1>
               <motion.p
-                className="my-2 text-3xl sm:my-8">{rupiahFormat.convert(banner.price)}</motion.p>
+                className="text-3xl sm:my-8">{rupiahFormat.convert(banner.price)}</motion.p>
               <Link href={`/product/${banner.slug.current}`}>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  type="button" className="inline-flex px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-orange-400 to-pink-400 rounded-lg ring-0 hover:ring-pink-200 hover:ring-4">Buy Now</motion.button>
+                  type="button" className="mt-6 inline-flex px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-orange-400 to-pink-400 rounded-lg ring-0 hover:ring-pink-200 hover:ring-4">Buy Now</motion.button>
               </Link>
             </motion.div>
           </div>
